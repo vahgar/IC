@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^x/', include('x.urls')),
+    url(r'^$', 'ishan.views.home',name="homepage"),
 ]
