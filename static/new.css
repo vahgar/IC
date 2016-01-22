@@ -1,0 +1,9 @@
+.purple {
+	background-color: #800080;
+}
+.border {
+	border-bottom: 2px solid black;
+}
+li {
+	list-style-type: none;
+}

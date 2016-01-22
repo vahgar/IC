@@ -1,0 +1,31 @@
+#heading {
+	text-align: center;
+	padding: 5% 5% 2% 5%;
+}
+body {
+	background-color: #800080;
+}
+li {
+	list-style-type: none;
+}
+.section {
+	width: 80%;
+	margin: 0 auto;
+	font-family: Sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	border: 1px solid #400040;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #993299;
+	padding: 1% 1% 1% 1%;
+}
+.inside_sections {
+	width: 80%;
+	margin: 0 auto;
+	font-family: Verdana;
+	border: 1px solid #400040;
+	border-radius: 5px;
+	background-color: #b266b2;
+	display: none;
+}

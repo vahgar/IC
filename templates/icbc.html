@@ -1,0 +1,152 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ishan Creations</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
+    <link href="{% static 'icbc.css' %}" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <script type="text/JavaScript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+   
+    <!-- Content Section -->
+    <div class="purple">
+        <div class="border">
+        <h1 id="heading">Ishan Creations Business Club</h1>
+        <p id="heading">"Ishan Creations Business Club (ICBC) is the very Core Division of Ishan Creations."<br>										
+Ishan Creations Business Club (ICBC) is created with the most innovative concept of "Empowering Consumer and Strengthening Business". It aims to provide the every member with the opportunity to have the best products and services. For Consumer, its objective is to make home consumables conveniently available at your doorsteps. For Business entity, it helps to get better ROI by strengthening their business.<br><br>
+In today's busy lifestyle, ICBC allows you to walk away from the drudgery of spending hours at supermarkets for grocery shopping and spend your free time to enhance your family bonding and doing things you like.<br>	<br>							
+At ICBC you will get best prices on your daily needs and favourite grocery items with free home delivery for all order above Rs. 1000.You don't need to worry about getting stuck in traffic jams, long queues to billing desk, burning fuels to reach retail shop/supermarkets,paying for parking charges,carrying large heavy bags.<br><br>									
+We at ICBC strive to achieve highest level of customer satisfaction & delight by delivering the right quality product in time as desired by our customer. With all this it brings to you all the price benefits and Quality Guarantee and we built the base of highly satisfy customers by providing them best value for their money.<br><br>						
+You can return the material if you are not satisfied without any questions asked at the time of delivery. Be it our path-breaking services like Cash on Delivery, a 5-day replacement policy.<br>
+Presently our services are focused in Kandivali (Mumbai) & we are willing to expand our local presence across all areas.			     </div>			
+
+							
+							</p>
+    <div>
+
+        <div class="purple">
+            <h1 id="heading">&nbsp; ICBC Benefits</h1>
+            <div>
+                <ul>
+                    <li><div id="section1" class="section">Benefits for a Consumer &#8595</div>
+                            <div id="inside_section1" class="inside_sections">*
+Empowering Consumer / Individual<br>
+* Value for Money<br>
+* Time Saving<br> 
+* Money Saving<br>
+* Enhances Family Bonding<br>
+* Provides Platform for Growth to those Individuals:<br>
+* Special offers on our <a>Business Categories</a> 
+</div>
+                    </li>
+                    <li><div id="section2" class="section">Benefits for a Business &#8595</div>
+                            <div id="inside_section2" class="inside_sections">
+* Strengthening Business<br>
+* Consumer Volume<br>
+* Business Sales Volume<br>
+* Helps in Stock Management<br>
+* Less Inventory <br>
+* Enhances Profits<br>
+* Improves Circulation<br>
+* No Expiry<br>
+* Increases ROI<br>
+* Improves Credibility<br>
+                            </div>
+                    </li>
+                </ul>
+            </div>   
+        </div>
+
+    <!-- Footer -->
+   
+    
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Ishan Creations 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('#section1').click(function() {
+            $('#inside_section1').slideToggle("slow");
+        });
+
+        $('#section1').hover(function() {
+            $('#section1').css('background-color','#bf7fbf')
+
+        },function() {
+
+            $('#section1').css('background-color','')
+
+        });
+
+        $(document).click(function(e) {
+         if(e.target.id!="section1")
+         {
+            $("#inside_section1").slideUp("slow");
+         }
+         if(e.target.id!="section2")
+         {
+            $('#inside_section2').slideUp("slow");
+         }
+        });
+
+        $('#section2').click(function() {
+            $('#inside_section2').slideToggle("slow");
+        });
+
+        $('#section2').hover(function() {
+            $('#section2').css('background-color','#bf7fbf')
+
+        },function() {
+
+            $('#section2').css('background-color','')
+
+        });
+
+
+    });
+
+
+    </script>
+
+</body>
+        
+</html>
